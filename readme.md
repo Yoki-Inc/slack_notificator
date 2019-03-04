@@ -2,10 +2,10 @@
 Send notification to Slack when a new channel has been created.
 
 ## How to use
-###STEP1. Preparation
+### STEP1. Preparation
 Create lambda project & API Gateway, then also create a new app on Slack.
 
-###STEP2. Verification
+### STEP2. Verification
 
 You need to add this source below on index.js due to verify API for Slack.
 ```
@@ -26,13 +26,13 @@ Slack will response like below to verify a new API end-point.
 Access to **Features > Event Subscriptions**, and type API end-point on the field. If "Verified" is shown, the setting is almost done.
 
 
-###STEP3. Setting up index.js
+### STEP3. Setting up index.js
 
 Get Bot User OAuth Access Token from **Features > OAuth & Permissions**, and then insert ID you have given on index.js.
 
 Finally, make a ZIP file which contains node_modules and index.js and upload it to AWS.
 
-###STEP4. Test action
+### STEP4. Test action
 
 Now, you can test this lambda action by the following JSON:
 ```
