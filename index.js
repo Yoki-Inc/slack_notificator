@@ -17,4 +17,5 @@ exports.handler = (event, context, callback) => {
 		link_names: 1,
 		channel: 'PUT-CHANNEL-ID-HERE' //通知したいチャンネルID(Display IDではない)
 	});
+	slack.next();
 };
